@@ -41,8 +41,6 @@ h3 {
 body {
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
-  width: 1600px;
-  margin: 0 auto;
 }
 
 .container {
