@@ -25,6 +25,12 @@ h3 {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -52,8 +58,6 @@ body {
 .header {
   background-color: var(--white);
   border-bottom: 1px solid var(--header-border);
-  display: flex;
-  align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -201,12 +205,8 @@ body {
   margin-bottom: 50px;
 }
 
-.features {
-  padding-bottom: 0;
-}
-
-.what-we-do-image {
-  display: block;
+.what-we-do {
+  padding-top: 0;
 }
 
 .team {
@@ -220,13 +220,9 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-photo,
-.team-role {
-  margin-bottom: 30px;
-}
-
-.team-photo {
-  display: block;
+.team-card-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-name {
@@ -249,20 +245,15 @@ body {
 
 .footer {
   background-color: var(--bg-dark);
-  display: flex;
-  align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer .container {
-  display: flex;
-  flex-direction: column;
 }
 
 .logo-footer {
   color: var(--white);
   margin-bottom: 20px;
+  margin-right: 0;
+  display: inline-block;
 }
 
 .address-footer,
@@ -343,6 +334,7 @@ body {
 .project-card-description {
   border: 1px solid var(--card-border);
   border-top-color: transparent;
+  padding: 20px 24px;
 }
 
 .project-card:not(:nth-child(3n)) {
@@ -358,25 +350,12 @@ body {
 }
 
 .project-item-title {
-  margin-top: 20px;
-}
-
-.project-item-text {
-  margin-bottom: 20px;
-}
-
-.project-item-image {
-  display: block;
-}
-
-.project-item-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-color);
   margin-bottom: 4px;
-  padding-left: 24px;
 }
 
 .project-item-text {
@@ -384,7 +363,6 @@ body {
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--grey);
-  padding-left: 24px;
 }
 
 .project-item-title:hover,
